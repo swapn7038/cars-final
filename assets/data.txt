@@ -1,0 +1,29 @@
+Website Architecture
+nav 
+ -> Home
+ -> Services
+ -> About
+ -> Contact
+
+ -> search
+ -> Login
+ -> Register
+
+carousal 
+ -> 6 images in carousal
+-> with previous and next option
+
+about us 
+
+Our Services
+
+We Provide 
+
+Contact Me
+
+Footer
+
+
+ About us 
+Our Software is the ideal way to manage complete garage workshop.
+The software has capability to generate jobcard for vehicle repair, process that and generate invoice and quotation for tha vehicle service repairs.
