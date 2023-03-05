@@ -48,38 +48,51 @@
         <img src="./assets/images/c6.jpg" />
       </div>
       <div class="slide">
-        <img src="./assets/images/c6.jpg" />
+        <img src="./assets/images/c7.jpeg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c1.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c2.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c3.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c4.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c5.jpg" />
       </div>
       <div class="slide">
         <img src="./assets/images/c6.jpg" />
       </div>
       <div class="slide">
-        <img src="./assets/images/c6.jpg" />
+        <img src="./assets/images/c7.jpeg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c1.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c2.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c3.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c4.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./assets/images/c5.jpg" />
       </div>
       <div class="slide">
         <img src="./assets/images/c6.jpg" />
       </div>
       <div class="slide">
-        <img src="./assets/images/c6.jpg" />
+        <img src="./assets/images/c7.jpeg" />
       </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
-      <div class="slide">
-        <img src="./assets/images/c6.jpg" />
-      </div>
+      
     </div>
   </div>
 </div>
@@ -113,13 +126,13 @@
         <a class="btn"  href="#">Book Now</a>
       </div>
       <div class="card">
-        <img src="./assets/images/s1.jpg">
+        <img src="./assets/images/s2.jpg">
         <h1>Lorem, ipsum.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, accusamus?</p>
         <a  class="btn" href="#">Book Now</a>
       </div>
       <div class="card">
-        <img src="./assets/images/s1.jpg">
+        <img src="./assets/images/s3.jpg">
         <h1>Lorem, ipsum.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, accusamus?</p>
         <a  class="btn" href="#">Book Now</a>

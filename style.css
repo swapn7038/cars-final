@@ -44,7 +44,7 @@ section {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #000000;
 }
 
 nav {
@@ -80,6 +80,7 @@ nav button {
   height: 1.9rem;
   font-size: 0.9rem;
 }
+
 nav button.btn-register {
   margin-right: 1rem;
 }
@@ -147,7 +148,7 @@ nav button.btn-register {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 65);
+  width: calc(250px * 80);
 }
 .slider .slide {
   height: 100vh;
