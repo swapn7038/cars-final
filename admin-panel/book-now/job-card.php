@@ -24,15 +24,18 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    height: 100vh;
+    height: 140vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4070f4;
+    background-color: rebeccapurple;
     column-gap: 30px;
+    /* border:3px solid red; */
 }
+
 .form{
+    height: auto;
     position: absolute;
     max-width: 430px;
     width: 100%;
@@ -40,24 +43,51 @@
     border-radius: 6px;
     background: #FFF;
 }
+
 .form.signup{
     opacity: 0;
     pointer-events: none;
 }
+
 .forms.show-signup .form.signup{
     opacity: 1;
     pointer-events: auto;
 }
+
 .forms.show-signup .form.login{
     opacity: 0;
     pointer-events: none;
 }
+
+.btn {
+  display: block;
+  width: auto;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: rebeccapurple;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
 header{
     font-size: 28px;
     font-weight: 600;
     color: #232836;
     text-align: center;
 }
+
 form{
     margin-top: 30px;
 }
@@ -68,6 +98,7 @@ form{
     margin-top: 20px;
     border-radius: 6px;
 }
+
 .field input,
 .field button{
     height: 100%;
@@ -75,6 +106,7 @@ form{
     border: none;
     font-size: 16px;
     font-weight: 400;
+   
     border-radius: 6px;
 }
 .field input{
@@ -121,14 +153,14 @@ form{
 .form-content a:hover{
     text-decoration: underline;
 }
-.line{
+/* .line{
     position: relative;
     height: 1px;
     width: 100%;
     margin: 36px 0;
     background-color: #d4d4d4;
-}
-.line::before{
+} */
+/* .line::before{
     content: 'Or';
     position: absolute;
     top: 50%;
@@ -137,16 +169,18 @@ form{
     background-color: #FFF;
     color: #8b8b8b;
     padding: 0 15px;
-}
+} */
 .media-options a{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 a.facebook{
     color: #fff;
     background-color: #4267b2;
 }
+
 a.facebook .facebook-icon{
     height: 28px;
     width: 28px;
@@ -193,84 +227,65 @@ a.google span{
         <section class="container forms">
             <div class="form login">
                 <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
+                    <header>Get Your Job Done</header>
+                    <form action="job-card-submitted.php" method="post">
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
+                            <input name="first_name" type="text" placeholder="First Name..." class="input">
                         </div>
 
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        <div class="field input-field">
+                            <input name="last_name" type="text" placeholder="Last Name..." class="input">
                         </div>
 
-                        <div class="field button-field">
-                            <button>Login</button>
+                        <div class="field input-field">
+                            <input name="customer_id"  type="number" placeholder="Customer Id..." class="input">
                         </div>
+
+                        <div class="field input-field">
+                            <input name="work_order"  type="number" placeholder="Work Order" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="date" type="date" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="vehicle_no" type="number" placeholder="Vehicle Number..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="mileage" type="number" placeholder="Mileage..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="report" type="text" placeholder="Reporte..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="completed_action" type="textarea" placeholder="Completed Action..." class="input">
+                        </div>
+
+
+                        <div class="field input-field">
+                            <input name="total_cost" type="number" placeholder="Total Cost" class="input">
+                        </div>
+
+                        <input class="btn" type="submit">
+
                     </form>
-
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
                     </div>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="#" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
                 </div>
 
             </div>
 
+            <!-- Signup Form -->
+
+          
+
+            
+
+            </div>
         </section>
-
-        <!-- JavaScript -->
-        <!--<script src="js/script.js"></script>-->
-
-
-        <script>
-//              const forms = document.querySelector(".forms"),
-//       pwShowHide = document.querySelectorAll(".eye-icon"),
-//       links = document.querySelectorAll(".link");
-
-// pwShowHide.forEach(eyeIcon => {
-//     eyeIcon.addEventListener("click", () => {
-//         let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-        
-//         pwFields.forEach(password => {
-//             if(password.type === "password"){
-//                 password.type = "text";
-//                 eyeIcon.classList.replace("bx-hide", "bx-show");
-//                 return;
-//             }
-//             password.type = "password";
-//             eyeIcon.classList.replace("bx-show", "bx-hide");
-//         })
-        
-//     })
-// })      
-
-// links.forEach(link => {
-//     link.addEventListener("click", e => {
-//        e.preventDefault(); //preventing form submit
-//        forms.classList.toggle("show-signup");
-//     })
-// })
-
-        </script>
     </body>
 </html>
