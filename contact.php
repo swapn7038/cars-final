@@ -34,6 +34,7 @@
         align-items: center;
         justify-content: center;
         background-color: #553e53;
+        /* background-color: red; */
         column-gap: 30px;
       }
 
