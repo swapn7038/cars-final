@@ -182,7 +182,7 @@ include('navbar.php');
     //  include('./new-section/blogs/blog.html') 
     ?>
     <?php  include('map.php') ?>
-    <?php  include('contact.html') ?>
+    <?php  include('contact.php') ?>
     <?php  include('footer.php') ?>
     <!-- ===== MAP SECTION END ===== -->
   </body>
