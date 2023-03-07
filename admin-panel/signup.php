@@ -1,3 +1,6 @@
+
+<?php  ob_start(); ?>
+
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
@@ -192,44 +195,83 @@
     </style>
   </head>
   <body>
+
+  
+  <?php
+  // session_start();
+ if(isset($_POST['signup'])) {
+     $conn = mysqli_connect("localhost", "root", "", "job-card") or die("Connection Failed");
+
+     $fname = $_POST['fname'];
+     $lname = $_POST['lname'];
+     $email = $_POST['email'];
+     $password = $_POST['password'];
+
+     $sql = "INSERT INTO register ( fname, lname, email, password) values ('$fname', '$lname', '$email', $password)";
+    //  $sql = "INSERT INTO register ( fname, lname, email, password) values ($fname, $lname, $email, $password)";
+
+
+     $result = mysqli_query($conn, $sql) or die("Query Failed");
+
+     if($result === true){
+      header('Location:../index.php');
+     }
+
+     $conn = mysqli_close();
+
+     session_abort();
+    //  print_r($result);
+ }
+
+
+ ob_end_flush(); 
+?>
     <section class="container forms">
       <div class="form login">
         <div class="form-content">
           <header>Sign Up</header>
-          <form action="#">
+          <!-- <form action="<?php 
+          // $_SERVER['PHP_SELF'];
+          ?>"  method="post" autocomplete="off"> -->
+          <form action="../index.php"  method="post" autocomplete="off">
             <div class="field input-field">
               <input
+              name="fname"
                 type="name"
                 placeholder="Enter First Name..."
                 class="input"
+                required
               />
             </div>
             <div class="field input-field">
               <input
+              name="lname"
                 type="name"
                 placeholder="Enter Last Name..."
                 class="input"
+                required
               />
             </div>
 
             <div class="field input-field">
-              <input type="email" placeholder="Email" class="input" />
+              <input name="email" type="email" placeholder="Email" class="input" required />
             </div>
 
             <div class="field input-field">
-              <input type="password" placeholder="Password" class="password" />
+              <input name="password" type="password" placeholder="Password" class="password" required />
               <i class="bx bx-hide eye-icon"></i>
             </div>
 
             <div class="field button-field">
-              <button>Sign Up</button>
+              <button name="signup"  class="signup">Sign Up</button>
             </div>
           </form>
 
           <div class="form-link">
             <span
               >Allready have an account
-              <a href="./login.php"
+              <a
+               href="./login.php"
                 class="link signup-link"
               >
                 &nbsp; &nbsp;Login</a

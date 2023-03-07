@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
     <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +13,17 @@
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-        <style>
+<style>
             /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+ .container{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -32,7 +32,7 @@
     background-color: #4070f4;
     column-gap: 30px;
 }
-.form{
+ .form{
     position: absolute;
     max-width: 430px;
     width: 100%;
@@ -61,6 +61,7 @@ header{
 form{
     margin-top: 30px;
 }
+
 .form .field{
     position: relative;
     height: 50px;
@@ -68,6 +69,7 @@ form{
     margin-top: 20px;
     border-radius: 6px;
 }
+
 .field input,
 .field button{
     height: 100%;
@@ -77,15 +79,18 @@ form{
     font-weight: 400;
     border-radius: 6px;
 }
+
 .field input{
     outline: none;
     padding: 0 15px;
     border: 1px solid#CACACA;
 }
+
 .field input:focus{
     border-bottom-width: 2px;
 }
-.eye-icon{
+
+/* .eye-icon{
     position: absolute;
     top: 50%;
     right: 10px;
@@ -94,41 +99,49 @@ form{
     color: #8b8b8b;
     cursor: pointer;
     padding: 5px;
-}
+} */
+
 .field button{
     color: #fff;
     background-color: #0171d3;
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .field button:hover{
     background-color: #016dcb;
 }
+/* 
 .form-link{
     text-align: center;
     margin-top: 10px;
-}
-.form-link span,
+} */
+
+/* .form-link span,
 .form-link a{
     font-size: 14px;
     font-weight: 400;
     color: #232836;
-}
-.form a{
+} */
+
+/* .form a{
     color: #0171d3;
     text-decoration: none;
-}
-.form-content a:hover{
+} */
+
+/* .form-content a:hover{
     text-decoration: underline;
-}
-.line{
+} */
+
+/* .line{
     position: relative;
     height: 1px;
     width: 100%;
     margin: 36px 0;
     background-color: #d4d4d4;
-}
-.line::before{
+} */
+
+/* .line::before{
     content: 'Or';
     position: absolute;
     top: 50%;
@@ -137,17 +150,20 @@ form{
     background-color: #FFF;
     color: #8b8b8b;
     padding: 0 15px;
-}
-.media-options a{
+} */
+
+/* .media-options a{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-a.facebook{
+} */
+
+/* a.facebook{
     color: #fff;
     background-color: #4267b2;
-}
-a.facebook .facebook-icon{
+} */
+
+/* a.facebook .facebook-icon{
     height: 28px;
     width: 28px;
     color: #0171d3;
@@ -157,27 +173,31 @@ a.facebook .facebook-icon{
     align-items: center;
     justify-content: center;
     background-color: #fff;
-}
-.facebook-icon,
+} */
+
+/* .facebook-icon,
 img.google-img{
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-}
-img.google-img{
+} */
+
+/* img.google-img{
     height: 20px;
     width: 20px;
     object-fit: cover;
-}
-a.google{
+} */
+
+/* a.google{
     border: 1px solid #CACACA;
-}
-a.google span{
+} */
+
+/* a.google span{
     font-weight: 500;
     opacity: 0.6;
     color: #232836;
-}
+} */
 
 @media screen and (max-width: 400px) {
     .form{
@@ -186,10 +206,13 @@ a.google span{
     
 }
 
-        </style>
+  </style>
+
+ 
                         
     </head>
     <body>
+
         <section class="container forms">
             <div class="form login">
                 <div class="form-content">
@@ -201,46 +224,19 @@ a.google span{
 
                         <div class="field input-field">
                             <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
                         </div>
 
                         <div class="field button-field">
-                            <button>Login</button>
+                            <button name="login" class="login" >Login</button>
                         </div>
                     </form>
 
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
-                    </div>
                 </div>
 
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
-                    </a>
-                </div>
-
-                <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="#" alt="" class="google-img">
-                        <span>Login with Google</span>
-                    </a>
-                </div>
-
+               
             </div>
 
         </section>
-
-        <!-- JavaScript -->
-        <!--<script src="js/script.js"></script>-->
-
 
         <script>
 //              const forms = document.querySelector(".forms"),

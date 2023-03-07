@@ -29,6 +29,51 @@
       </div>
     </nav>
     <!-- ===== NAV END ===== -->
+
+    <!-- ===== PHP ===== -->
+
+    <?php
+
+// session_start();
+
+// $conn = mysqli_connect('localhost', "root", "", "job-card") or die("connection failed");
+
+// $sql = "SELECT * FROM register";
+
+// $result = mysqli_query($conn, $sql) or die("Query Failed");
+
+// $data = mysqli_fetch_assoc($result);
+
+
+
+// $fname = $data['fname'];
+
+// if(!($data == 1)){
+//   echo "<h6> Data is present";
+// } else {
+//   echo "<h6> Failed";
+// }
+
+// session_abort();
+
+// print_r($data);
+
+?>
+
+
+<?php  
+
+
+
+// echo "<div class='msg'>
+// <h1> Welcome $fname
+// </div>";
+
+?>
+        <!-- ===== PHP END ===== -->
+
+
+
     <!-- ===== CAROUSAL ===== -->
     <div class="carousal-container">
       <div class="slider">

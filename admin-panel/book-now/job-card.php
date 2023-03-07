@@ -218,9 +218,7 @@ a.google span{
         padding: 20px 10px;
     }
     
-}
-
-        </style>
+}        </style>
                         
     </head>
     <body>
@@ -231,7 +229,7 @@ a.google span{
                     <form action="job-card-submitted.php" method="post">
 
                         <div class="field input-field">
-                            <input name="first_name" type="text" placeholder="First Name..." class="input">
+                            <input  name="first_name" type="text" placeholder="First Name..." class="input" required>
                         </div>
 
                         <div class="field input-field">
