@@ -5,10 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<title> Responsive Login and Signup Form </title>-->
 
-        <!-- CSS -->
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <title>Job-card Data</title>
                 
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -24,14 +22,13 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    height: 140vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rebeccapurple;
     column-gap: 30px;
-    /* border:3px solid red; */
 }
 
 .form{
@@ -153,23 +150,7 @@ form{
 .form-content a:hover{
     text-decoration: underline;
 }
-/* .line{
-    position: relative;
-    height: 1px;
-    width: 100%;
-    margin: 36px 0;
-    background-color: #d4d4d4;
-} */
-/* .line::before{
-    content: 'Or';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFF;
-    color: #8b8b8b;
-    padding: 0 15px;
-} */
+
 .media-options a{
     display: flex;
     align-items: center;
@@ -246,6 +227,10 @@ a.google span{
 
                         <div class="field input-field">
                             <input name="date" type="date" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="model_name" type="number" placeholder="Model Name..." class="input">
                         </div>
 
                         <div class="field input-field">

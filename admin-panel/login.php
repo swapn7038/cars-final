@@ -1,3 +1,6 @@
+<?php  ob_start(); ?>
+
+
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
     <html lang="en">
@@ -90,16 +93,6 @@ form{
     border-bottom-width: 2px;
 }
 
-/* .eye-icon{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #8b8b8b;
-    cursor: pointer;
-    padding: 5px;
-} */
 
 .field button{
     color: #fff;
@@ -111,93 +104,7 @@ form{
 .field button:hover{
     background-color: #016dcb;
 }
-/* 
-.form-link{
-    text-align: center;
-    margin-top: 10px;
-} */
 
-/* .form-link span,
-.form-link a{
-    font-size: 14px;
-    font-weight: 400;
-    color: #232836;
-} */
-
-/* .form a{
-    color: #0171d3;
-    text-decoration: none;
-} */
-
-/* .form-content a:hover{
-    text-decoration: underline;
-} */
-
-/* .line{
-    position: relative;
-    height: 1px;
-    width: 100%;
-    margin: 36px 0;
-    background-color: #d4d4d4;
-} */
-
-/* .line::before{
-    content: 'Or';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFF;
-    color: #8b8b8b;
-    padding: 0 15px;
-} */
-
-/* .media-options a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* a.facebook{
-    color: #fff;
-    background-color: #4267b2;
-} */
-
-/* a.facebook .facebook-icon{
-    height: 28px;
-    width: 28px;
-    color: #0171d3;
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-} */
-
-/* .facebook-icon,
-img.google-img{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-} */
-
-/* img.google-img{
-    height: 20px;
-    width: 20px;
-    object-fit: cover;
-} */
-
-/* a.google{
-    border: 1px solid #CACACA;
-} */
-
-/* a.google span{
-    font-weight: 500;
-    opacity: 0.6;
-    color: #232836;
-} */
 
 @media screen and (max-width: 400px) {
     .form{
@@ -213,60 +120,56 @@ img.google-img{
     </head>
     <body>
 
+    <
+
+<?php
+  // session_start();
+ if(isset($_POST['login'])) {
+     $conn = mysqli_connect("localhost", "root", "", "job-card") or die("Connection Failed");
+
+     $email = $_POST['email'];
+     $password = $_POST['$password'];
+
+     $sql = "INSERT INTO login (email, password) values ('$email', $password)";
+
+     $result = mysqli_query($conn, $sql) or die("Query Failed");
+
+     if($result === true){
+      header('Location:../index.php');
+     }
+
+     $conn = mysqli_close();
+
+     session_abort();
+ }
+
+
+ ob_end_flush(); 
+
+?>
+
         <section class="container forms">
             <div class="form login">
                 <div class="form-content">
                     <header>Login</header>
-                    <form action="#">
+                    <form action="<?php  ?>">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input name="email" type="email" placeholder="Email" class="input">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input name="password" type="password" placeholder="Password" class="password">
                         </div>
 
                         <div class="field button-field">
-                            <button name="login" class="login" >Login</button>
+                            <button name="login" class="login" ><a href="../index.php">Login</a></button>
                         </div>
                     </form>
 
                 </div>
 
-               
             </div>
-
         </section>
 
-        <script>
-//              const forms = document.querySelector(".forms"),
-//       pwShowHide = document.querySelectorAll(".eye-icon"),
-//       links = document.querySelectorAll(".link");
-
-// pwShowHide.forEach(eyeIcon => {
-//     eyeIcon.addEventListener("click", () => {
-//         let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-        
-//         pwFields.forEach(password => {
-//             if(password.type === "password"){
-//                 password.type = "text";
-//                 eyeIcon.classList.replace("bx-hide", "bx-show");
-//                 return;
-//             }
-//             password.type = "password";
-//             eyeIcon.classList.replace("bx-show", "bx-hide");
-//         })
-        
-//     })
-// })      
-
-// links.forEach(link => {
-//     link.addEventListener("click", e => {
-//        e.preventDefault(); //preventing form submit
-//        forms.classList.toggle("show-signup");
-//     })
-// })
-
-        </script>
     </body>
 </html>
