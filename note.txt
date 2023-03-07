@@ -1,2 +1,10 @@
 first user will register
 then they can login 
+
+--> 
+
+contact page 
+
+contact form 
+
+then footer
