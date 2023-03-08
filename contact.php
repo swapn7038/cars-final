@@ -193,7 +193,7 @@
     </style>
   </head>
   <body>
-    <section class="container forms">
+    <section id="contact-us" class="container forms">
       <div class="form login">
         <div class="form-content">
           <header>Contact Us</header>

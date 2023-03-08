@@ -1,7 +1,4 @@
-
-
     <!-- ===== PHP ===== -->
-
     <?php
 
 // session_start();
@@ -118,32 +115,9 @@ include('navbar.php');
       </div>
     </div>
     <!-- ===== END OF CAROUSAL ===== -->
-    <!-- ===== ABOUT US SECTION ===== -->
-    <section class="about-us">
-      <div class="about-us-img">
-        <img src="./assets/images/a1.jpg" />
-      </div>
 
-      <div class="about-us-info">
-        <h1>About Us</h1>
-
-        <div>
-          <p>
-            Our Software is the ideal way to manage complete garage workshop.
-          </p>
-          <p>
-            The software has capability to generate jobcard for vehicle repair,
-            <br />
-            process that and generate invoice and quotation for tha vehicle
-            service repairs.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- ===== ABOUT US SECTION END ===== -->
-
-    <!-- ===== SERVICES SECTION ===== -->
-    <section class="services">
+      <!-- ===== SERVICES SECTION ===== -->
+      <section id="services" class="services">
       <h1>Services We Provide</h1>
       <div class="card-container">
         <div class="card">
@@ -176,6 +150,32 @@ include('navbar.php');
       </div>
     </section>
     <!-- ===== SERVICES SECTION END ===== -->
+    
+    <!-- ===== ABOUT US SECTION ===== -->
+    <section id="about-us" class="about-us">
+      <div class="about-us-img">
+        <img src="./assets/images/a1.jpg" />
+      </div>
+
+      <div class="about-us-info">
+        <h1>About Us</h1>
+
+        <div>
+          <p>
+            Our Software is the ideal way to manage complete garage workshop.
+          </p>
+          <p>
+            The software has capability to generate jobcard for vehicle repair,
+            <br />
+            process that and generate invoice and quotation for tha vehicle
+            service repairs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== ABOUT US SECTION END ===== -->
+
+  
 
     <!-- ===== MAP SECTION ===== -->
     <?php 
