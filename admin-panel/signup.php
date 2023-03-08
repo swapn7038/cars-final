@@ -233,7 +233,7 @@
           <!-- <form action="<?php 
           // $_SERVER['PHP_SELF'];
           ?>"  method="post" autocomplete="off"> -->
-          <form action="../index.php"  method="post" autocomplete="off">
+          <form action="welcome-sign-up.php"  method="post" autocomplete="off">
             <div class="field input-field">
               <input
               name="fname"

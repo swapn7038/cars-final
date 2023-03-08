@@ -261,13 +261,6 @@ a.google span{
                 </div>
 
             </div>
-
-            <!-- Signup Form -->
-
-          
-
-            
-
             </div>
         </section>
     </body>
