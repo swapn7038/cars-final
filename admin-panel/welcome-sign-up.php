@@ -3,6 +3,8 @@
         text-decoration:none;
         list-style-type:none;
     }
+
+   
     body{
         display: flex;
         height: 120vh;
@@ -13,14 +15,14 @@
         padding:1rem 2rem;
         font-family:sans-serif;
         overflow-x:hidden;
+        flex-direction:column;
     }
 
     html{
-        font-size:62.5%;
+        font-size:60%;
     }
 
     nav {
-        border:2px solid red;
         display: flex;
         flex-direction:column;
         text-align:center;
@@ -31,17 +33,30 @@
         font-size:2rem;
     }
 
+    nav ul {
+        font-size:3rem;
+    }
+
     nav a {
         font-size:1.5rem;
         border:2px solid ;
         padding:1rem 1.2rem;
         border-radius:.5rem;
         transition:.3s;
+        color:black;
         
     }
     nav a:hover{
         box-shadow:2px 3px 4px rgba(0,0,0,0.5);
         text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+    }
+
+    p{
+        font-size:2rem;
+    }
+    
+    div{
+        margin-top:4rem;
     }
 </style>
 
@@ -83,7 +98,12 @@ $last_name = $_POST['lname'];
  </ul>    
 </nav>
 
-<!-- <?php echo "<p class='' > <b> Customer Name : </b> $last_name  $first_name</p>"; ?> -->
+<div>
+
+<?php echo "<p class='' > <b> Customer Name : </b> $last_name  $first_name</p>"; ?>
+
+
+</div>
 
 
 

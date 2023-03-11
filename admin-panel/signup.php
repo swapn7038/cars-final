@@ -279,58 +279,7 @@
             >
           </div>
         </div>
-
-        <!-- <div class="line"></div> -->
-
-        <!-- <div class="media-options">
-                    <a href="#" class="field facebook">
-                        <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Sign up with Facebook</span>
-                    </a>
-                </div> -->
-
-        <!-- <div class="media-options">
-                    <a href="#" class="field google">
-                        <img src="#" alt="" class="google-img">
-                        <span>Signup with Google</span>
-                    </a>
-                </div> -->
       </div>
-
-      <!-- Signup Form -->
     </section>
-
-    <!-- JavaScript -->
-    <!--<script src="js/script.js"></script>-->
-
-    <script>
-      // const forms = document.querySelector(".forms"),
-      //   pwShowHide = document.querySelectorAll(".eye-icon"),
-      //   links = document.querySelectorAll(".link");
-
-      // pwShowHide.forEach((eyeIcon) => {
-      //   eyeIcon.addEventListener("click", () => {
-      //     let pwFields =
-      //       eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-
-      //     pwFields.forEach((password) => {
-      //       if (password.type === "password") {
-      //         password.type = "text";
-      //         eyeIcon.classList.replace("bx-hide", "bx-show");
-      //         return;
-      //       }
-      //       password.type = "password";
-      //       eyeIcon.classList.replace("bx-show", "bx-hide");
-      //     });
-      //   });
-      // });
-
-      // links.forEach((link) => {
-      //   link.addEventListener("click", (e) => {
-      //     e.preventDefault(); //preventing form submit
-      //     forms.classList.toggle("show-signup");
-      //   });
-      // });
-    </script>
   </body>
 </html>

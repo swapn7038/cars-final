@@ -273,7 +273,19 @@ a.google span{
 
                     <div class="right">
                     <div class="field input-field">
-                            <input  name="first_name" type="text" placeholder="First Name..." class="input" required>
+                            <input  name="job_type" type="text" placeholder="Enter Job Type..." class="input" >
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="service_mode" type="text" placeholder="Enter Service Mode..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="current_kilometer"  type="number" placeholder="Enter Kilometer..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="payment_mode"  type="text" placeholder="Payment Mode..." class="input">
                         </div>
 
                         <div class="field input-field">
@@ -281,11 +293,7 @@ a.google span{
                         </div>
 
                         <div class="field input-field">
-                            <input name="customer_id"  type="number" placeholder="Customer Id..." class="input">
-                        </div>
-
-                        <div class="field input-field">
-                            <input name="state"  type="number" placeholder="Enter State" class="input">
+                            <input name="state" type="text" placeholder="Enter State..." class="input">
                         </div>
 
                         <div class="field input-field">
@@ -293,8 +301,18 @@ a.google span{
                         </div>
 
                         <div class="field input-field">
+                            <input name="phone" type="number" placeholder="Phone No." class="input">
+                        </div>
+
+                        <div class="field input-field">
                             <input name="pan" type="number" placeholder="Enter PAN No." class="input">
                         </div>
+
+                        <div class="field input-field">
+                            <input name="email" type="number" placeholder="Enter Email..." class="input">
+                        </div>
+
+                        
 
                         <!-- <div class="field input-field">
                             <input name="vehicle_no" type="number" placeholder="Vehicle Number..." class="input">
