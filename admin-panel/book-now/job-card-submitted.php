@@ -74,6 +74,17 @@ padding:6px 3px ;
     margin:.5rem;
   }
 
+  .end{
+    border:1px solid;
+    display: grid;
+    border-radius:.5rem;
+    place-items:center;
+  }
+
+  .end a {
+    margin-bottom:10rem;
+  }
+
 </style>
 
 
@@ -158,6 +169,30 @@ $email = $_POST['email'];
 <?php echo "<p class='' > <b>  Email : </b> $email</p>"; ?>
 </div>
 
+
+<!-- ================= Customer Information ================= -->
+
+<div class="right">
+  <h4>Customer Details</h4>
+<?php echo "<p class='' > <b> Name : </b> $last_name  $first_name</p>"; ?>
+<!-- new var -> address -->
+<?php echo "<p class='' > <b>Customer Type : </b> Customer Type</p>"; ?>
+<?php echo "<p class='' > <b> Phone No. : </b> $phone</p>"; ?>
+<!-- new vae state -->
+<?php echo "<p class='' > <b> Mobile No. 1 : </b> $phone</p>"; ?>
+<?php echo "<p class='' > <b> Mobile No. 2 : </b> $phone</p>"; ?>
+<!-- new var phone -->
+<!-- new var state code & pan $email-->
+<?php echo "<p class='' > <b> Email : </b> $email</p>"; ?>
+<?php echo "<p class='' > <b>  Locality : </b> Aurangabad</p>"; ?>
+</div>
+
+
+<div  class="end">
+  
+<h1>Thanks for Our service...</h1>
+
+</div>
 </div>
 
 </body>

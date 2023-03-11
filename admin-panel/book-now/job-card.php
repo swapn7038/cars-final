@@ -243,7 +243,7 @@ a.google span{
                         </div>
 
                         <div class="field input-field">
-                            <input name="model_name" type="number" placeholder="Model Name..." class="input">
+                            <input name="model_name" type="text" placeholder="Model Name..." class="input">
                         </div>
 
                         <div class="field input-field">
@@ -309,7 +309,7 @@ a.google span{
                         </div>
 
                         <div class="field input-field">
-                            <input name="email" type="number" placeholder="Enter Email..." class="input">
+                            <input name="email" type="text" placeholder="Enter Email..." class="input">
                         </div>
 
                         

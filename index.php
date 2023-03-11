@@ -118,7 +118,7 @@ include('navbar.php');
       <div class="card-container">
         <div class="card">
           <img src="./assets/images/s1.jpg" />
-          <h1>Lorem, ipsum.</h1>
+          <h1>Servicing</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             accusamus?
@@ -127,7 +127,7 @@ include('navbar.php');
         </div>
         <div class="card">
           <img src="./assets/images/s2.jpg" />
-          <h1>Lorem, ipsum.</h1>
+          <h1>Repair</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             accusamus?
@@ -136,7 +136,7 @@ include('navbar.php');
         </div>
         <div class="card">
           <img src="./assets/images/s3.jpg" />
-          <h1>Lorem, ipsum.</h1>
+          <h1>Washing</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             accusamus?
