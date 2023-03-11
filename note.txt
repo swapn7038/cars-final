@@ -1,10 +1,10 @@
-first user will register
-then they can login 
+After sign-up => Navigation page 
+ In Navigation page -> Create job card option
 
---> 
+After clicking on job-card => Create-job card page will open 
 
-contact page 
+=> On Create-job-card page we will have lot of option 
+=> After filling them -> new page will open -> Showing Data filled in from cre-job-card page...
 
-contact form 
 
-then footer
+After login -> only static data will be there...

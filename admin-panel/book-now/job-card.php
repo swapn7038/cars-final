@@ -12,14 +12,12 @@
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
         <style>
-            /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 .container{
     height: 200vh;
@@ -34,7 +32,8 @@
 .form{
     height: auto;
     position: absolute;
-    max-width: 430px;
+    /* max-width: 430px; */
+    max-width: auto;
     width: 100%;
     padding: 30px;
     border-radius: 6px;
@@ -87,6 +86,8 @@ header{
 
 form{
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .form .field{
     position: relative;
@@ -96,17 +97,21 @@ form{
     border-radius: 6px;
 }
 
+
+
+
 .field input,
 .field button{
     height: 100%;
-    width: 100%;
+    width: 90%;
     border: none;
     font-size: 16px;
     font-weight: 400;
-   
     border-radius: 6px;
+    /* border:10px solid red; */
 }
 .field input{
+    /* border:2px solid red; */
     outline: none;
     padding: 0 15px;
     border: 1px solid#CACACA;
@@ -114,7 +119,7 @@ form{
 .field input:focus{
     border-bottom-width: 2px;
 }
-.eye-icon{
+/* .eye-icon{
     position: absolute;
     top: 50%;
     right: 10px;
@@ -123,46 +128,52 @@ form{
     color: #8b8b8b;
     cursor: pointer;
     padding: 5px;
-}
+} */
+
 .field button{
     color: #fff;
     background-color: #0171d3;
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .field button:hover{
     background-color: #016dcb;
 }
+
 .form-link{
     text-align: center;
     margin-top: 10px;
 }
+
 .form-link span,
 .form-link a{
     font-size: 14px;
     font-weight: 400;
     color: #232836;
 }
+
 .form a{
     color: #0171d3;
     text-decoration: none;
 }
+
 .form-content a:hover{
     text-decoration: underline;
 }
 
-.media-options a{
+/* .media-options a{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-a.facebook{
+/* a.facebook{
     color: #fff;
     background-color: #4267b2;
-}
+} */
 
-a.facebook .facebook-icon{
+/* a.facebook .facebook-icon{
     height: 28px;
     width: 28px;
     color: #0171d3;
@@ -172,8 +183,9 @@ a.facebook .facebook-icon{
     align-items: center;
     justify-content: center;
     background-color: #fff;
-}
-.facebook-icon,
+} */
+
+/* .facebook-icon,
 img.google-img{
     position: absolute;
     top: 50%;
@@ -192,7 +204,7 @@ a.google span{
     font-weight: 500;
     opacity: 0.6;
     color: #232836;
-}
+} */
 
 @media screen and (max-width: 400px) {
     .form{
@@ -209,7 +221,8 @@ a.google span{
                     <header>Get Your Job Done</header>
                     <form action="job-card-submitted.php" method="post">
 
-                        <div class="field input-field">
+                    <div class="left">
+                    <div class="field input-field">
                             <input  name="first_name" type="text" placeholder="First Name..." class="input" required>
                         </div>
 
@@ -254,6 +267,58 @@ a.google span{
                             <input name="total_cost" type="number" placeholder="Total Cost" class="input">
                         </div>
 
+                    </div>
+
+                    <!-- right -->
+
+                    <div class="right">
+                    <div class="field input-field">
+                            <input  name="first_name" type="text" placeholder="First Name..." class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="address" type="text" placeholder="Enter Address..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="customer_id"  type="number" placeholder="Customer Id..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="state"  type="number" placeholder="Enter State" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="state_code" type="number" placeholder="Enter State Code" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="pan" type="number" placeholder="Enter PAN No." class="input">
+                        </div>
+
+                        <!-- <div class="field input-field">
+                            <input name="vehicle_no" type="number" placeholder="Vehicle Number..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="mileage" type="number" placeholder="Mileage..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="report" type="text" placeholder="Reporte..." class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="completed_action" type="textarea" placeholder="Completed Action..." class="input">
+                        </div>
+
+
+                        <div class="field input-field">
+                            <input name="total_cost" type="number" placeholder="Total Cost" class="input">
+                        </div> -->
+
+                    </div>
+                        
                         <input class="btn" type="submit">
 
                     </form>

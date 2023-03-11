@@ -199,32 +199,32 @@
   
   <?php
   // session_start();
- if(isset($_POST['signup'])) {
-     $conn = mysqli_connect("localhost", "root", "", "job-card") or die("Connection Failed");
+//  if(isset($_POST['signup'])) {
+    //  $conn = mysqli_connect("localhost", "root", "", "job-card") or die("Connection Failed");
 
-     $fname = $_POST['fname'];
-     $lname = $_POST['lname'];
-     $email = $_POST['email'];
-     $password = $_POST['password'];
+    //  $fname = $_POST['fname'];
+    //  $lname = $_POST['lname'];
+    //  $email = $_POST['email'];
+    //  $password = $_POST['password'];
 
-     $sql = "INSERT INTO register ( fname, lname, email, password) values ('$fname', '$lname', '$email', $password)";
+    //  $sql = "INSERT INTO register ( fname, lname, email, password) values ('$fname', '$lname', '$email', $password)";
     //  $sql = "INSERT INTO register ( fname, lname, email, password) values ($fname, $lname, $email, $password)";
 
 
-     $result = mysqli_query($conn, $sql) or die("Query Failed");
+    //  $result = mysqli_query($conn, $sql) or die("Query Failed");
 
-     if($result === true){
-      header('Location:../index.php');
-     }
+    //  if($result === true){
+    //   header('Location:../index.php');
+    //  }
 
-     $conn = mysqli_close();
+    //  $conn = mysqli_close();
 
-     session_abort();
+    //  session_abort();
     //  print_r($result);
- }
+//  }
 
 
- ob_end_flush(); 
+//  ob_end_flush(); 
 ?>
     <section class="container forms">
       <div class="form login">

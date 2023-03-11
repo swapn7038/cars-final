@@ -11,8 +11,6 @@
 
 // $data = mysqli_fetch_assoc($result);
 
-
-
 // $fname = $data['fname'];
 
 // if(!($data == 1)){
@@ -41,8 +39,6 @@ include('navbar.php');
 
 ?>
         <!-- ===== PHP END ===== -->
-
-
 
     <!-- ===== CAROUSAL ===== -->
     <div class="carousal-container">
@@ -183,7 +179,7 @@ include('navbar.php');
     ?>
     <?php  include('map.php') ?>
     <?php  include('contact.php') ?>
-    <?php  include('footer.php') ?>
+    <?php  include_once('footer.php') ?>
     <!-- ===== MAP SECTION END ===== -->
   </body>
 </html>

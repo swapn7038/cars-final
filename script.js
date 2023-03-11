@@ -3,7 +3,7 @@
 // const slides = document.querySelectorAll(".slide");
 // let currentIndex = 0;
 
-// // Go to the previous slide
+// Go to the previous slide
 // function prevSlide() {
 //   if (currentIndex === 0) {
 //     currentIndex = slides.length - 1;
@@ -13,7 +13,7 @@
 //   updateSlide();
 // }
 
-// // Go to the next slide
+// Go to the next slide
 // function nextSlide() {
 //   if (currentIndex === slides.length - 1) {
 //     currentIndex = 0;
@@ -23,7 +23,7 @@
 //   updateSlide();
 // }
 
-// // Update the current slide
+// Update the current slide
 // function updateSlide() {
 //   const width = slides[0].offsetWidth;
 //   const slidePosition = -(width * currentIndex);

@@ -11,6 +11,13 @@ $mileage = $_POST['mileage'];
 $report = $_POST['report'];
 $completed_action = $_POST['completed_action'];
 $total_cost = $_POST['total_cost'];
+$address = $_POST['$address'];
+$phone = $_POST['$phone'];
+
+$state = $_POST['$state'];
+$state_code = $_POST['$state_code'];
+$pan_no = $_POST['$pan_no'];
+$email = $_POST['$email'];
 
 
 ?>
@@ -29,52 +36,86 @@ $total_cost = $_POST['total_cost'];
 }
 
 body {
-  background: rgb(120,254,255);
-background: linear-gradient(112deg, rgba(120,254,255,1) 0%, 
-rgba(0,245,237,1) 0%, 
-rgba(235,194,21,1) 0%, 
-rgba(158,198,231,1) 0%, 
-rgba(120,231,231,1) 42%, 
-rgba(238,173,238,1) 100%
-);
+background-color: #eadfea;
+opacity: 1;
+background-image: radial-gradient(#000000 0.2px, #eadfea 0.2px);
+background-size: 4px 4px;
+padding:6px 3px ;
 
 }
 
-.end-page h1{
-  width:100%;
-  margin:auto;
+.top-container{
+  border:4px solid  red;
   text-align:center;
 }
 
-form {
-  padding:2rem 4rem;
+.top-c-info{
+  border:4px solid ;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
 }
 
 
-  form .customer_name{
+.container {
+  padding:2rem 4rem;
+  display: grid;
+  
+  grid-template-columns:1fr 1fr;
+  /* border:2px solid ;  */
+}
+
+
+  .container .customer_name{
     font-size:.9rem;
   }
 
-  form p{
+  .container p{
     margin:1rem 0;  
-    padding-left:2rem;
-    font-size:1.2rem;
+    font-size:.9rem;
+    /* border:2px solid red; */
+    /* padding-left:2rem; */  
   }
+
+  .container {}
+
+  .left {
+    border:1px solid;
+    padding:.9rem;
+    border-radius:.5rem;
+    margin:.5rem;
+  }
+  .right {
+    border:1px solid;
+    padding:.9rem;
+    border-radius:.5rem;
+    margin:.5rem;
+  }
+
 </style>
 
 
 <body>
 
-<div class="end-page" > 
-
-<?php echo "<h1 class='section-heading'> Thanks $first_name for choosing our service"; ?>
-
-</div>
-
 <!-- ======================= form ============================ -->
 
-<form>
+<div class="top-container">
+  <h2>Invoice</h2>
+  <div class="top-c-info">
+  <p>Order Number</p>
+  <p>Invlice Number</p>
+  <p>Invlice Date</p>
+  <p>Document Type</p>
+  <p>Supply Type</p>
+  </div>
+</div>
 
+
+<div  class="container">
+
+
+
+<div class="left">
+  <h4>Suppliers Details(Ship From)</h4>
 <?php echo "<p class='' > <b> Customer Name : </b> $last_name  $first_name</p>"; ?>
 <?php echo "<p class='' > <b> Customer ID : </b> $customer_id</p>"; ?>
 <?php echo "<p class='' > <b> Work Order : </b> $work_order</p>"; ?>
@@ -84,8 +125,27 @@ form {
 <?php echo "<p class='' > <b> Mileage : </b> $mileage</p>"; ?>
 <?php echo "<p class='' > <b>  Completed Action : </b> $completed_action</p>"; ?>
 <?php echo "<p class='' > <b>  Total Cost : </b> $completed_action</p>"; ?>
+</div>
 
-</form>
+
+<div class="right">
+  <h4>Ship To(Place To Delivery)</h4>
+<?php echo "<p class='' > <b> Legal Name : </b> $last_name  $first_name</p>"; ?>
+<?php echo "<p class='' > <b> Name : </b>  $last_name  $first_name </p>"; ?>
+<!-- new var -> address -->
+<?php echo "<p class='' > <b> Address : </b> $address</p>"; ?>
+<?php echo "<p class='' > <b> Date : </b> $date</p>"; ?>
+<!-- new vae state -->
+<?php echo "<p class='' > <b> State : </b> $state</p>"; ?>
+<!-- new var phone -->
+<?php echo "<p class='' > <b> Phone : </b> $phone</p>"; ?>
+<!-- new var state code & pan $email-->
+<?php echo "<p class='' > <b> State Code : </b> $state_code</p>"; ?>
+<?php echo "<p class='' > <b>  PAN No : </b> $pan_no</p>"; ?>
+<?php echo "<p class='' > <b>  Email : </b> $email</p>"; ?>
+</div>
+
+</div>
 
 </body>
 
